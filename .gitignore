@@ -107,7 +107,3 @@ venv.bak/
 .vs
 .vscode
 .idea
-
-# CFG
-cfg/
-!cfg/.gitkeep
