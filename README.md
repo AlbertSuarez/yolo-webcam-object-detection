@@ -9,6 +9,19 @@
 
 🎥 Real-time object detection from a Webcam using tiny-YOLO with [Darkflow](https://github.com/thtrieu/darkflow) (Darknet + tensorflow).
 
+## Contents
+
+1. [Results](#results)
+2. [Requirements](#requirements)
+3. [Recommendations](#recommendations)
+4. [Usage](#usage)
+5. [Authors](#authors)
+6. [License](#license)
+
+## Results
+
+![Example](docs/example.png)
+
 ## Requirements
 
 - Python 3+.
