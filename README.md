@@ -14,7 +14,7 @@
 1. [Requirements](#requirements)
 2. [Recommendations](#recommendations)
 3. [Usage](#usage)
-4. [Results](#results)
+4. [Example](#example)
 5. [Authors](#authors)
 6. [License](#license)
 
