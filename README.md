@@ -11,16 +11,12 @@
 
 ## Contents
 
-1. [Results](#results)
-2. [Requirements](#requirements)
-3. [Recommendations](#recommendations)
-4. [Usage](#usage)
+1. [Requirements](#requirements)
+2. [Recommendations](#recommendations)
+3. [Usage](#usage)
+4. [Results](#results)
 5. [Authors](#authors)
 6. [License](#license)
-
-## Results
-
-![Example](docs/example.png)
 
 ## Requirements
 
@@ -53,6 +49,10 @@ To run the application, please execute the following from the root directory:
   ```bash
   python3 -m src
   ```
+
+## Example
+
+![Example](docs/example.png)
 
 ## Authors
 
