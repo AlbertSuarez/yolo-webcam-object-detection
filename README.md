@@ -35,13 +35,7 @@ To run the application, please execute the following from the root directory:
   source install_darkflow.sh
   ```
 
-4. Pull YOLO model files
-
-  ```bash
-  git lfs pull
-  ```
-
-5. Run the application
+4. Run the application
 
   ```bash
   python3 -m src
