@@ -108,6 +108,6 @@ venv.bak/
 .vscode
 .idea
 
-# Data
-data
-!data/.gitkeep
+# CFG
+cfg/
+!cfg/.gitkeep
