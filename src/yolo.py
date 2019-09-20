@@ -8,8 +8,12 @@ from src import *
 
 
 # noinspection SpellCheckingInspection
-def run():
-    tf_net = TFNet({'model': MODEL_PATH, 'load': WEIGHTS_PATH, 'threshold': MODEL_THRESHOLD})
+def run(model_name):
+    tf_net = TFNet({
+        'model': MODEL_PATH.format(model=model_name),
+        'load': WEIGHTS_PATH.format(model=model_name),
+        'threshold': MODEL_THRESHOLD
+    })
     colors = [tuple(255 * np.random.rand(3)) for _ in range(10)]
 
     capture = cv2.VideoCapture(0)

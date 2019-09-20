@@ -7,7 +7,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/AlbertSuarez/yolo-webcam-object-detection.svg)](https://GitHub.com/AlbertSuarez/yolo-webcam-object-detection/network/)
 [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/AlbertSuarez/yolo-webcam-object-detection.svg)](https://github.com/AlbertSuarez/yolo-webcam-object-detection)
 
-🎥 Real-time object detection from a Webcam using tiny-YOLO with [Darkflow](https://github.com/thtrieu/darkflow) (Darknet + tensorflow).
+🎥 Real-time object detection from a Webcam using tiny-YOLO or YOLO with [Darkflow](https://github.com/thtrieu/darkflow) (Darknet + tensorflow).
 
 ## Contents
 
@@ -44,11 +44,13 @@ To run the application, please execute the following from the root directory:
   source install_darkflow.sh
   ```
 
-4. Run the application
+4. Run the application with one of the available models (`tiny-yolo` or `yolo`)
 
   ```bash
-  python3 -m src
+  python3 -m src [--model MODEL_NAME]
   ```
+
+  > `tiny-yolo` is the default model in order to get a better performance w/o GPU. If you want to get better results, then specify the `yolo` model.
 
 ## Example
 
