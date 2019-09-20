@@ -44,13 +44,13 @@ To run the application, please execute the following from the root directory:
   source install_darkflow.sh
   ```
 
-4. Run the application with one of the available models (`tiny-yolo` or `yolo`)
+4. Run the application with one of the available models (`tiny-yolo-voc` or `yolo`)
 
   ```bash
   python3 -m src [--model MODEL_NAME]
   ```
 
-  > `tiny-yolo` is the default model in order to get a better performance w/o GPU. If you want to get better results, then specify the `yolo` model.
+  > `tiny-yolo-voc` is the default model in order to get a better performance w/o GPU. If you want to get better results, then specify the `yolo` model.
 
 ## Example
 

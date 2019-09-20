@@ -1,5 +1,5 @@
-MODEL_LIST = ['tiny-yolo', 'yolo']
-MODEL_DEFAULT = 'tiny-yolo'
+MODEL_LIST = ['tiny-yolo-voc', 'yolo']
+MODEL_DEFAULT = 'tiny-yolo-voc'
 MODEL_PATH = 'cfg/{model}.cfg'
 WEIGHTS_PATH = 'cfg/{model}.weights'
 MODEL_THRESHOLD = 0.35
