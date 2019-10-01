@@ -13,8 +13,6 @@ services:
       - 9080:9080
       - 3080:3080
     restart: always
-    depends_on:
-      - yolo-object-detection-nginx
     volumes:
       - ./cfg:/srv/yolo-object-detection/cfg
 
@@ -29,6 +27,8 @@ services:
     ports:
       - 8080:8080
     restart: always
+    depends_on:
+      - yolo-object-detection-app
 
 networks:
   yolo-object-detection:
