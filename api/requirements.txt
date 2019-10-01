@@ -1,0 +1,9 @@
+Flask
+Flask-Cors
+uWSGI
+uwsgitop
+numpy
+Cython
+tensorflow
+opencv-python
+requests
