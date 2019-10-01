@@ -1,0 +1,36 @@
+version: '3.6'
+services:
+
+  yolo-object-detection-app:
+    image: yolo-object-detection-app
+    container_name: yolo-object-detection-app
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+    networks:
+      - yolo-object-detection
+    ports:
+      - 9080:9080
+      - 3080:3080
+    restart: always
+    depends_on:
+      - yolo-object-detection-nginx
+    volumes:
+      - ./cfg:/srv/yolo-object-detection/cfg
+
+  yolo-object-detection-nginx:
+    image: yolo-object-detection-nginx
+    container_name: yolo-object-detection-nginx
+    build:
+      context: .
+      dockerfile: api/Dockerfile.nginx
+    networks:
+      - yolo-object-detection
+    ports:
+      - 8080:8080
+    restart: always
+
+networks:
+  yolo-object-detection:
+    name: yolo-object-detection
+    driver: bridge
