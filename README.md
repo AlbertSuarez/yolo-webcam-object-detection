@@ -47,10 +47,11 @@ To run the application, please execute the following from the root directory:
 4. Run the application with one of the available models (`tiny-yolo-voc` or `yolo`)
 
   ```bash
-  python3 -m src [--model MODEL_NAME]
+  python3 -m src [--model MODEL_NAME --device_id DEVICE_ID]
   ```
 
   > `tiny-yolo-voc` is the default model in order to get a better performance w/o GPU. If you want to get better results, then specify the `yolo` model.
+  > `0` is the default device id which is the embedded web cam of your computer. For running the project with another web cam, just specify 1, 2, etc (depends on how many web cams you have).
 
 ## Example
 

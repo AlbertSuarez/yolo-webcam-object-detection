@@ -7,6 +7,7 @@ from src import yolo
 def _parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--model', type=_valid_model, default=MODEL_DEFAULT)
+    parser.add_argument('--device_id', type=int, default=DEVICE_DEFAULT)
     return parser.parse_args()
 
 
@@ -20,4 +21,4 @@ def _valid_model(s):
 
 if __name__ == '__main__':
     args = _parse_args()
-    yolo.run(model_name=args.model)
+    yolo.run(model_name=args.model, device_id=args.device_id)
